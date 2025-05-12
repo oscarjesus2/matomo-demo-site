@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Demo Web</title>
+</head>
+<body>
+  <h1>Bienvenido a la web de prueba</h1>
+  <p>Esta página ha sido subida a Netlify para probar Matomo.</p>
+
+  <!-- Matomo Tracking Script -->
+  <script>
+    var _paq = window._paq = window._paq || [];
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//https://matomo.cocinaactiva.com/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', 'X']); // Reemplaza X con el ID de tu sitio en Matomo
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Tracking Script -->
+</body>
+</html>
